@@ -1,0 +1,27 @@
+@import '../../layout/styles/default_settings';
+
+.button {
+    background-color: $secondary;
+    border: 0;
+    border-radius: 0.25rem;
+    color: $white;
+    cursor: pointer;
+    display: block;
+    font-size: 1.2em;
+    line-height: 1em;
+    // margin: 0 0.5em;
+    // margin-top: 1rem;
+    min-width: 10em;
+    outline: 1px solid rgba(255, 255, 255, 0);
+    outline-offset: -0.25rem;
+    padding: 1em;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 200ms all; // Animate state changes.
+    &:hover,
+    &:active,
+    &:focus {
+        outline-color: rgba(255, 255, 255, 1);
+    }
+}

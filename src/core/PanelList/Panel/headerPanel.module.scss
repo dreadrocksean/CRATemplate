@@ -1,0 +1,17 @@
+@import '../../../layout/styles/default_settings';
+
+.root {
+    width: 100%;
+    background-color: $primaryDark;
+    padding: 0 1.5rem;
+    border-radius: 2px;
+    color: white;
+    text-transform: uppercase;
+}
+.heading {
+    font-size: 1rem;
+    color: $white;
+}
+.hColumn {
+    flex-basis: 50%;
+}

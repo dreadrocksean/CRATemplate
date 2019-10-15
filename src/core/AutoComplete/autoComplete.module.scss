@@ -1,0 +1,21 @@
+@import '../../layout/styles/default_settings';
+
+.root {
+    flex-grow: 1;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    height: 5em;
+    // height: 3rem;
+}
+.input {
+    display: flex;
+    padding: 0;
+}
+.placeholder {
+    position: absolute;
+    left: 2px;
+    font-size: 16px;
+}
+.select__control {
+    height: 5em;
+}

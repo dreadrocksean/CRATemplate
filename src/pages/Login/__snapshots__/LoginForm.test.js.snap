@@ -1,0 +1,80 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LoginForm component renders the todo correctly renders correctly 1`] = `
+<div
+  className="MuiPaper-root-31 MuiPaper-elevation1-34 MuiPaper-rounded-32 MuiCard-root-30 loginFormWrapper "
+>
+  <div
+    className="MuiCardContent-root-58"
+  >
+    <div
+      className="formTitle"
+    >
+      <div>
+        <a
+          className="logo"
+        >
+          <img
+            alt="MetroNet Logo"
+            src="SDlogo.png"
+            width="150"
+          />
+        </a>
+        <div>
+          <h2>
+            Inventory Manager
+          </h2>
+        </div>
+      </div>
+    </div>
+    <form
+      className="loginForm"
+      data-validate-wrapper={true}
+      onSubmit={[Function]}
+    >
+      <div
+        className="textInput"
+      >
+        <label>
+          Username
+          <input
+            autoComplete="username"
+            format="text"
+            name="Username"
+            onBlur={[Function]}
+            onChange={[Function]}
+            type="text"
+            value=""
+          />
+        </label>
+      </div>
+      <div
+        className="textInput"
+      >
+        <label>
+          Password
+          <input
+            autoComplete="current-password"
+            format="password"
+            name="Password"
+            onBlur={[Function]}
+            onChange={[Function]}
+            type="password"
+            value=""
+          />
+        </label>
+      </div>
+      <div
+        className="formActions"
+      >
+        <button
+          className="button"
+          type="submit"
+        >
+          Log In
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+`;

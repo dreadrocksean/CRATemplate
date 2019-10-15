@@ -1,0 +1,14 @@
+@import '../../layout/styles/default_settings';
+
+.content {
+    // padding-top: 30rem;
+    padding-bottom: 0;
+    position: relative;
+    z-index: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.contentScroll {
+    padding-top: 1rem;
+    max-height: 12rem;
+}

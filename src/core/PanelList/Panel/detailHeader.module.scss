@@ -1,0 +1,15 @@
+@import '../../../layout/styles/default_settings';
+
+.root {
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+.subHeading {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background: $blueGray;
+}
+.text {
+    color: $white;
+    text-transform: uppercase;
+}

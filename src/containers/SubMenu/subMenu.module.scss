@@ -1,0 +1,31 @@
+@import "../../layout/styles/default_settings";
+
+.subMenu {
+  background: $secondary;
+  color: darken($secondary, 25%);
+  margin: 0;
+  margin-bottom: 0.5rem;
+  display: flex;
+  flex: 1;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: $topBarHeight;
+  padding: 0.5rem;
+
+  a {
+    color: darken($secondary, 25%);
+  }
+
+  span {
+    margin-right: 0.6rem;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  h2 {
+    color: darken($secondary, 25%);
+    margin: 0;
+  }
+}

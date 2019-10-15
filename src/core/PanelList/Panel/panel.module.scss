@@ -1,0 +1,39 @@
+@import '../../../layout/styles/default_settings';
+
+.root {
+    width: 100%;
+    margin-bottom: 0.3rem;
+    background: lightgrey;
+}
+.heading {
+    font-size: 1rem;
+}
+.secondaryHeading {
+    font-size: 1rem;
+    color: $blueGray;
+}
+.hColumn {
+    flex-basis: 50%;
+}
+.stats {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    // text-shadow: 0 1px 0px rgba(0,0,0,0.5);
+    &:first-child {
+        color: $secondaryDark;
+        margin-right: 0.6rem;
+    }
+    &:last-child {
+        color: $warningOrange;
+    }
+}
+.icon {
+    font-size: 1rem;
+    &:first-child {
+        margin-right: 0.1rem;
+    }
+}
+.count {
+    font-size: 1.2rem;
+}

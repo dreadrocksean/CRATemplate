@@ -1,0 +1,49 @@
+@import '../../layout/styles/default_settings';
+
+.button {
+    max-width: 100%;
+    min-width: 100%;
+}
+.actionContainer {
+    // margin-top: 0.5rem;
+    border-top: solid 1px white;
+    justify-content: center;
+}
+.h2 {
+    margin: 0;
+}
+.openButton {
+    margin-bottom: 0.5rem;
+}
+.formContainer {
+    flex-grow: 1;
+    justify-content: center;
+    width: 100%;
+}
+.formWrapper {
+    width: 100%;
+}
+.fields {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.textfield {
+    display: flex;
+    align-items: center;
+    background: $white;
+    border-radius: 0.2rem;
+    box-shadow: 0 1px 3px -1px rgba(0, 0, 0, 0.7);
+    padding: 1rem;
+}
+.close {
+    cursor: pointer;
+    color: #a0a0a0;
+    margin-top: 0.5rem;
+    &:hover {
+        color: grey;
+    }
+}
+.addIcon {
+    margin-right: 0.5rem;
+}

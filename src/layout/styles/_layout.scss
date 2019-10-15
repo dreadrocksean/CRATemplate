@@ -1,0 +1,29 @@
+@import './_default_settings';
+
+.app {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+/* Wrapper class for content area on a text-based page */
+.textContent {
+    max-width: 47rem;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+/* Single card page */
+.contentCard {
+    width: 25em;
+    max-width: 100%;
+    margin: 5em auto;
+    padding: 2em;
+    background-color: $white;
+    border: 1px solid $borderGray;
+
+    > h3:first-child {
+        margin-top: 0;
+    }
+}

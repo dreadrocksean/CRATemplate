@@ -1,0 +1,12 @@
+@import '../../layout/styles/default_settings';
+
+.dashboard {
+    .section {
+        margin-bottom: 7rem;
+
+        .grid {
+            display: flex;
+            flex: 1;
+        }
+    }
+}

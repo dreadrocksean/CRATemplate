@@ -1,0 +1,101 @@
+.headerContainer {
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: $white;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.topBar {
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+  height: $topBarHeight; // Ensure height doesn't change while web fonts load.
+  background-color: darken($primary, 15%);
+  box-shadow: inset 0 0 0.625em rgba(255, 255, 255, 0.1);
+
+  // We duplicate .topBar inside .overlay so the hamburger icon animates correctly
+  // on open/close. This ensures that the duplicate bar within .overlay is invisible
+  // and only used to manage the layout/animation for the hamburger icon.
+  .overlay & {
+    background-color: transparent !important;
+  }
+
+  .branding {
+    margin: 0;
+    padding: 0.25em;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: 300ms;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    img {
+      width: auto;
+      height: 100%;
+      max-height: 1.25rem; // IE11 has an issue with the normal height property.
+      display: inline-block;
+    }
+
+    .applicationName {
+      display: inline-block;
+      color: $white;
+      font-size: 1em;
+      line-height: 1em;
+      vertical-align: middle;
+      margin-left: 0.5em;
+      text-transform: uppercase;
+      font-weight: 400;
+      white-space: nowrap; // Don't wrap lines (Edge issue)
+    }
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
+    margin: 0.25em 1em;
+  }
+
+  .menu {
+    display: flex;
+    align-items: center;
+    margin: 0.25em 1em;
+
+    li {
+      display: inline-block;
+    }
+
+    a {
+      color: rgba(255, 255, 255, 0.8);
+      text-decoration: none;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+
+  .userInfo {
+    display: flex;
+  }
+
+  .navToggle {
+    display: none;
+    margin-left: auto;
+    align-items: center;
+  }
+}

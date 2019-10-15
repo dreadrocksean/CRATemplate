@@ -1,0 +1,56 @@
+@import '../../layout/styles/default_settings';
+
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex: 1;
+
+    .formTitle {
+        text-align: center;
+
+        h2 {
+            margin-top: 0;
+            font-weight: 300;
+        }
+
+        .logo {
+            display: inline-block;
+            margin-bottom: 1em;
+        }
+
+        p {
+            line-height: 1.25em;
+            margin-bottom: 1.25em;
+        }
+    }
+
+    .switchAccount {
+        font-size: 0.8em;
+        text-align: right;
+        font-weight: normal;
+
+        a {
+            text-decoration: underline;
+            color: $gray3;
+        }
+    }
+
+    .loading {
+        opacity: 0.5;
+    }
+}
+
+.loginFormWrapper {
+    margin: 0 auto;
+    width: 25rem;
+}
+
+.loginForm {
+    .formActions {
+        button {
+            width: 100%;
+            margin-top: 1rem;
+        }
+    }
+}

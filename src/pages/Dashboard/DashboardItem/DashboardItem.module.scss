@@ -1,0 +1,28 @@
+@import '../../../layout/styles/default_settings';
+
+.dashboardItem {
+    a {
+        text-decoration: none;
+    }
+
+    .disabled {
+        background: $disabledGray;
+        cursor: default;
+
+        h2 {
+            color: $gray9;
+        }
+    }
+}
+.root {
+    height: 0;
+    min-height: 8rem;
+    cursor: pointer;
+}
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    flex: 1;
+}

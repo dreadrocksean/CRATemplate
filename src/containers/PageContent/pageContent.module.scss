@@ -1,0 +1,9 @@
+@import "../../layout/styles/default_settings";
+
+.pageContent {
+  position: relative;
+  padding: calc(#{$topBarHeight + $subBarHeight + $messageBarHeight + 1rem})
+    3rem 3rem;
+  flex: 1;
+  overflow: auto;
+}

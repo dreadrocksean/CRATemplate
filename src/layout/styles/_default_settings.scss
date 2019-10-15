@@ -1,0 +1,40 @@
+@import "./mixins/colored-shadows";
+
+// Brand Colors
+$primary: #ffa500 !default;
+$primaryDark: saturate(darken($primary, 20%), 20%) !default;
+$secondary: #3c8dbc !default;
+$secondaryDark: saturate(darken($secondary, 20%), 20%) !default;
+$appDark: #222d32 !default;
+
+// Additional Colors
+$alertYellow: #f39c12 !default;
+$warningOrange: #dd4b39 !default;
+$errorRed: #dd4b39 !default;
+$darkUIGray1: #191919 !default;
+$darkUIGray2: #2d2d2d !default;
+$borderGray: #e4e4e4 !default;
+$disabledGray: #ececec !default;
+$blueGray: #5a6877 !default;
+
+// Base Colors
+$black: #000 !default;
+$white: #fff !default;
+$gray1: #111 !default;
+$gray2: #222 !default;
+$gray3: #333 !default;
+$gray4: #484848 !default;
+$gray5: #555 !default;
+$gray6: #767676 !default;
+$gray7: #777 !default;
+$gray8: #888 !default;
+$gray9: #929292 !default;
+$gray10: #aaa !default;
+$gray11: #bbb !default;
+$gray12: #f0f0f0 !default;
+
+// Layout
+$overlayMenuWidth: 16.25;
+$topBarHeight: 3rem;
+$subBarHeight: $topBarHeight;
+$messageBarHeight: 4rem;

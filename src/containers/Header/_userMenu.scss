@@ -1,0 +1,128 @@
+/* User Menu */
+.userInfo {
+    .user {
+        display: flex;
+        align-items: center;
+        position: relative;
+        transition: 300ms;
+
+        &:hover {
+            cursor: pointer;
+            opacity: 0.8;
+        }
+
+        .name {
+            font-size: 0.9rem;
+        }
+
+        .icon {
+            margin-left: 0.5em;
+            margin-right: -0.15rem;
+        }
+
+        &::after {
+            position: absolute;
+            top: 50%;
+            width: 0;
+            height: 0;
+            content: '';
+            transform: translateY(-50%);
+            border-top: 0.25em solid rgba(255, 255, 255, 0.8);
+            border-right: 0.25em solid transparent;
+            border-left: 0.25em solid transparent;
+        }
+    }
+}
+
+.userIcon {
+    width: 2rem;
+    height: 2rem;
+    position: relative;
+
+    &::after {
+        border-radius: 100%;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        box-shadow: inset 0 0 0.25em rgba(0, 0, 0, 0.3);
+    }
+
+    img {
+        display: block;
+        border-radius: 100%;
+    }
+}
+
+/* Base Styles  */
+.js-flyoutPanel {
+    ul {
+        list-style-type: none;
+    }
+
+    li {
+        list-style-type: none;
+        cursor: pointer;
+
+        &:last-child {
+            border-bottom: 0 none;
+        }
+    }
+
+    i::before {
+        opacity: 0.8;
+        font-size: 15px;
+        margin-right: 2px;
+        transition: all 0s ease;
+    }
+
+    span {
+        font-size: 0.9rem;
+        display: block;
+        padding: 0.25rem 0.25rem 0.25rem 0.5rem;
+        text-decoration: none;
+        color: $gray3;
+
+        &:hover {
+            transition: all 0s ease;
+            color: $white;
+            background: $primary;
+        }
+
+        &:focus {
+            outline: 2px dotted $secondary;
+            outline-offset: -2px;
+        }
+    }
+}
+
+/* Flyout panels in topBar */
+.topBar .userInfo {
+    position: relative;
+
+    .js-flyoutPanel {
+        top: 2.7rem;
+        right: 1em;
+    }
+
+    .user {
+        padding-right: 1em;
+
+        &::after {
+            right: 0;
+        }
+    }
+}
+
+/* Flyout panels in overlayMenu */
+.overlayMenu .userInfo {
+    .user {
+        padding: 0.5em;
+
+        &::after {
+            right: 0.5em;
+        }
+    }
+}

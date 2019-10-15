@@ -1,0 +1,9 @@
+@import '../../layout/styles/default_settings';
+
+.select__control {
+    height: 5em;
+    border-radius: 0.2rem;
+    box-shadow: 0 1px 3px -1px rgba(0, 0, 0, 0.7);
+    padding: 1rem;
+    border: none !important;
+}

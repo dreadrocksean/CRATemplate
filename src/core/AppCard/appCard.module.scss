@@ -1,0 +1,50 @@
+@import '../../layout/styles/default_settings';
+
+.root {
+    flex-grow: 0.3;
+    margin: 0 auto;
+    width: auto;
+    max-width: 60rem;
+    min-width: 10rem;
+    overflow: inherit;
+    background: $borderGray;
+}
+.technicianContainer {
+    margin-top: 2rem;
+}
+.submitContainer {
+    padding-bottom: 2rem;
+}
+.header {
+    position: relative;
+    z-index: 1;
+}
+.headerShadow {
+    box-shadow: 0 1.5rem 0.2rem -1.5rem rgba(0, 0, 0, 0.3);
+}
+.content {
+    padding-top: 0;
+    padding-bottom: 0;
+    position: relative;
+    z-index: 0;
+}
+.contentScroll {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-height: 12rem;
+    padding-top: 1rem;
+}
+.expPanel {
+    margin-bottom: 0.5rem;
+}
+.footer {
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem 1.5rem;
+    z-index: 1;
+    // box-Shadow: 0px -3px 3px -3px rgba(0,0,0,0.3);
+}
+.addIcon {
+    margin-right: 0.5rem;
+}

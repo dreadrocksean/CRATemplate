@@ -1,0 +1,36 @@
+@import '../../layout/styles/default_settings';
+
+.panelsContainer {
+    max-height: 20rem;
+    overflow: auto;
+}
+
+.fade-enter {
+    opacity: 0.01;
+    transform: translateY(-100%);
+}
+
+.fade-enter.fade-enter-active {
+    opacity: 1;
+    transform: translateY(0%);
+    transition: all 700ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.fade-exit {
+    opacity: 1;
+    transform: translateY(0%);
+}
+
+.fade-exit.fade-exit-active {
+    opacity: 0.01;
+    transform: translateY(-100%);
+    transition: all 700ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.out {
+    opacity: 0;
+}
+
+.in {
+    opacity: 0.3;
+}
