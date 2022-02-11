@@ -16,7 +16,7 @@
     "enzyme": "^3.6.0",
     "enzyme-adapter-react-16": "^1.5.0",
     "moment": "^2.24.0",
-    "node-sass": "^4.10.0",
+    "node-sass": "^7.0.0",
     "prettier": "^1.18.2",
     "prettierrc": "0.0.0",
     "react": "^16.10.2",
